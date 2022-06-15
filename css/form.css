@@ -1,0 +1,164 @@
+.loader{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    z-index: 5;
+    display: none;
+}
+
+.form-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+}
+
+.form-container{
+    width: 60%;
+    min-width: 300px;
+    height: 90vh;
+    background: #28282B;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    border-radius: 5px 40px;
+}
+
+.form-img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form{
+    width: 60%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-heading{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #fff;
+    margin: 5px 0;
+    padding: 10px;
+    line-height: 40px;
+    font-family: 'lato', sans-serif;
+    color: #000;
+    outline: none;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: #b9b9b9;
+    text-transform: capitalize;
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus, textarea:focus{
+    border: 2px solid #fdb61c;
+}
+
+input:focus::placeholder, textarea:focus::placeholder{
+    color: #fdb61c;
+}
+
+.error{
+    display: block;
+    font-size: .8rem;
+    color: rgb(244, 234, 234);
+    margin: 5px 0;
+    text-transform: capitalize;
+    font-family: 'lato', sans-serif;
+    user-select: none;
+    opacity: 0;
+}
+
+.error.show{
+    opacity: 1;
+}
+
+#tc{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: 1px solid #b9b9b9;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#tc:checked{
+    background: #f432ad;
+}
+
+#tc::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url(../img/check.png);
+    background-size: contain;
+    display: none;
+}
+
+#tc:checked::before{
+    display: block;
+}
+
+.tc-text{
+    margin-left: 5px;
+    font-size: 14px;
+    font-family: 'lato', sans-serif;
+    color: #fafafa;
+}
+
+.tc-text a{
+    color: #fdb61c;
+}
+
+.submit-btn{
+    display: block;
+    margin: 20px 0;
+    width: 100px;
+    padding: .8rem 0;
+    border-radius: 5px 30px;
+    background: #f432ad;
+    color: #fff;
+    font-family: 'cinzel';
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.other-form-link{
+    font-family: 'lato', sans-serif;
+    color: #fdb61c;
+    font-size: 14px;
+}
+p {
+    font-family: 'lato', sans-serif;
+    color: #fff;
+    font-size: 14px;
+}

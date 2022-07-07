@@ -67,7 +67,7 @@ nav .navbar-top {
 
 .navbar-top {
     width: 150px;
-    height: 75px;
+    height: 5px;
 }
 
 .navbar-top .logo{
@@ -718,15 +718,12 @@ footer .footer-second {
     line-height: 20px;
 }
 
-
-
-
-
 .hidden {
     display: none;
 }
 
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 768px) {
     nav .navbar-top {
         padding: 0;
     }
@@ -753,7 +750,7 @@ footer .footer-second {
         height: 55vh;
         z-index: 10;
         position: absolute;
-        top: 100px;
+        /* top: 100px; */
         left: 0;
         transform: translateX(-500px);
     }
@@ -886,7 +883,7 @@ footer .footer-second {
     }
 
     .navbar {
-        width: 100vw;
+        width: 300px;
         height: 430px;
     }
 

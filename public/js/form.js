@@ -47,11 +47,10 @@ formBtn.addEventListener('click', () => {
         } else{
             // submit form
             loader.style.display = 'block';
-           const result = sendData('/login', {
+            sendData('/login', {
                 email: email.value,
                 password: password.value
             })
-            console.log("r")
         }
     }
 })
